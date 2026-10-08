@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; connect-src 'self' https://*.trycloudflare.com; base-uri 'none'; form-action 'self'"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#b96539"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Pointer"><link rel="apple-touch-icon" href="./icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css"><title>Pointer · Cross-App Handoff</title></head>
+<body><main><header><span>📍 Pointer</span><small>Cross-App Handoff</small></header><section>
+<div class="label"><label for="target">Codex conversation</label><button id="sync" type="button">↻ Sync</button></div><select id="target" aria-label="Codex conversation"><option value="">Connecting…</option></select>
+<label for="text">Content</label><textarea id="text" rows="4" aria-label="Content"></textarea>
+<label class="upload" for="files">＋ Screenshot or file <small>Up to 3 files · 15 MB each</small></label><input id="files" type="file" multiple><div id="attachments"></div>
+<details><summary>Source link (optional)</summary><input id="url" type="url" aria-label="Source link"></details>
+<label for="instruction">What should Codex do?</label><textarea id="instruction" rows="4" aria-label="Instruction"></textarea>
+<p class="hint">Only the content you provide is sent. Other apps and exact text locations cannot be read automatically.</p>
+<div class="actions"><button id="send" type="button">Send to Codex</button><button id="clear" type="button">Clear</button></div>
+<p id="status" role="status" aria-live="polite">Connecting…</p><button id="check" type="button" hidden>Check delivery</button>
+</section></main><script src="./app.js"></script></body></html>
